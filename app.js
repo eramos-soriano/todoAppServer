@@ -27,3 +27,7 @@ app.use(cors());
 // hook in User router from routers/User.js
 // add the path to recieve requests
 app.use("/api/v1", User);
+
+app.get("/", (req, res) => {
+  res.send("Server is working");
+});
